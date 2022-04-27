@@ -1,13 +1,14 @@
-import KeyComponent from "./components/KeyComponent/KeyComponent";
-
+import KeyboardComponent from "./components/KeyboardComponent/KeyboardComponent";
 function App() {
   return (
     <div className="container">
-      <div className="keyboard-container">
-        <ol className="keyboard">
-          <KeyComponent className={"key"} text={"1"} />
-        </ol>
-      </div>
+      <span className="message"></span>
+      <main className="phone">
+        <KeyboardComponent />
+        <div className="actions">
+          <span className="number">667359961</span>
+        </div>
+      </main>
     </div>
   );
 }
