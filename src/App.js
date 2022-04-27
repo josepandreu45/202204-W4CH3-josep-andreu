@@ -1,4 +1,6 @@
 import KeyboardComponent from "./components/KeyboardComponent/KeyboardComponent";
+import ActionsComponent from "./components/ActionsComponent/ActionsComponent";
+import Display from "./components/DisplayComponent/DisplayComponent";
 function App() {
   return (
     <div className="container">
@@ -6,7 +8,8 @@ function App() {
       <main className="phone">
         <KeyboardComponent />
         <div className="actions">
-          <span className="number">667359961</span>
+          <Display numbers={16546} />
+          <ActionsComponent />
         </div>
       </main>
     </div>
